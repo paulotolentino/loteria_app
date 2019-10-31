@@ -27,14 +27,14 @@
         android:id="@+id/lottoicon"
         android:layout_width="259dp"
         android:layout_height="85dp"
-        android:contentDescription="@string/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.03"
-        app:srcCompat="@mipmap/logo_loteriaapp" />
+        app:srcCompat="@mipmap/logo_loteriaapp"
+        android:contentDescription="@string/logo"/>
 
     <ImageView
         android:id="@+id/bola1"
@@ -45,7 +45,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:srcCompat="@android:drawable/radiobutton_off_background"
+        app:srcCompat="@android:drawable/radiobutton_off_background" 
         android:contentDescription="@string/bola"/>
 
     <ImageView
@@ -120,9 +120,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola1"
         app:layout_constraintEnd_toEndOf="@+id/bola1"
         app:layout_constraintStart_toStartOf="@+id/bola1"
-        app:layout_constraintTop_toTopOf="@+id/bola1"
-        android:importantForAutofill="no"
-        android:hint="@string/space"/>
+        app:layout_constraintTop_toTopOf="@+id/bola1" 
+        android:autofillHints="00"/>
 
     <EditText
         android:id="@+id/input2"
@@ -133,9 +132,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola2"
         app:layout_constraintEnd_toEndOf="@+id/bola2"
         app:layout_constraintStart_toStartOf="@+id/bola2"
-        app:layout_constraintTop_toTopOf="@+id/bola2"
-        android:importantForAutofill="no"
-        android:hint="@string/space"/>
+        app:layout_constraintTop_toTopOf="@+id/bola2" />
 
     <EditText
         android:id="@+id/input3"
@@ -146,9 +143,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola3"
         app:layout_constraintEnd_toEndOf="@+id/bola3"
         app:layout_constraintStart_toStartOf="@+id/bola3"
-        app:layout_constraintTop_toTopOf="@+id/bola3"
-        android:importantForAutofill="no"
-        android:hint="@string/space"/>
+        app:layout_constraintTop_toTopOf="@+id/bola3" />
 
     <EditText
         android:id="@+id/input4"
@@ -159,9 +154,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola4"
         app:layout_constraintEnd_toEndOf="@+id/bola4"
         app:layout_constraintStart_toStartOf="@+id/bola4"
-        app:layout_constraintTop_toTopOf="@+id/bola4"
-        android:importantForAutofill="no"
-        android:hint="@string/space"/>
+        app:layout_constraintTop_toTopOf="@+id/bola4" />
 
     <EditText
         android:id="@+id/input5"
@@ -172,17 +165,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola5"
         app:layout_constraintEnd_toEndOf="@+id/bola5"
         app:layout_constraintStart_toStartOf="@+id/bola5"
-        app:layout_constraintTop_toTopOf="@+id/bola5"
-        android:importantForAutofill="no"
-        android:hint="@string/space"/>
+        app:layout_constraintTop_toTopOf="@+id/bola5" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:onClick="clickButton"
-        android:text="@string/sorteio"
-        android:textSize="25sp"
+        android:text="Sorteio"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />

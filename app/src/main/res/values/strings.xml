@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">loteria_app</string>
+    <string name="fa_a_seu_jogo">Faça seu jogo:</string>
+    <string name="logo">Logo</string>
+    <string name="bola">bola</string>
+    <string name="sorteio">Sorteio</string>
+    <string name="no">no</string>
+    <string name="space" />
 </resources>
