@@ -6,4 +6,8 @@
     <string name="sorteio">Sorteio</string>
     <string name="no">no</string>
     <string name="space" />
+    <string name="reset">Reset</string>
+    <string name="extracao">extracao</string>
+    <string name="extra_o">Extração:</string>
+    <string name="resultado">Resultado:</string>
 </resources>

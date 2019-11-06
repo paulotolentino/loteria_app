@@ -89,13 +89,74 @@
         android:id="@+id/bola5"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:contentDescription="@string/bola"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bola4"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:srcCompat="@android:drawable/radiobutton_off_background"
-        android:contentDescription="@string/bola" />
+        app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+    <ImageView
+        android:id="@+id/extracao1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/extracao"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/extracao2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+    <ImageView
+        android:id="@+id/extracao2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/extracao"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/extracao3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/extracao1"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+    <ImageView
+        android:id="@+id/extracao3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/extracao"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/extracao2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+    <ImageView
+        android:id="@+id/extracao4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/extracao"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/extracao5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/extracao3"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:srcCompat="@android:drawable/radiobutton_off_background" />
+
+    <ImageView
+        android:id="@+id/extracao5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/extracao"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/extracao4"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:srcCompat="@android:drawable/radiobutton_off_background" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -111,6 +172,20 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.55" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
     <EditText
         android:id="@+id/input1"
         android:layout_width="50dp"
@@ -121,7 +196,8 @@
         app:layout_constraintEnd_toEndOf="@+id/bola1"
         app:layout_constraintStart_toStartOf="@+id/bola1"
         app:layout_constraintTop_toTopOf="@+id/bola1" 
-        android:autofillHints="00"/>
+        android:autofillHints="00"
+        android:hint="@string/space"/>
 
     <EditText
         android:id="@+id/input2"
@@ -132,7 +208,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola2"
         app:layout_constraintEnd_toEndOf="@+id/bola2"
         app:layout_constraintStart_toStartOf="@+id/bola2"
-        app:layout_constraintTop_toTopOf="@+id/bola2" />
+        app:layout_constraintTop_toTopOf="@+id/bola2"
+        android:autofillHints="00"
+        android:hint="@string/space"/>
 
     <EditText
         android:id="@+id/input3"
@@ -143,7 +221,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola3"
         app:layout_constraintEnd_toEndOf="@+id/bola3"
         app:layout_constraintStart_toStartOf="@+id/bola3"
-        app:layout_constraintTop_toTopOf="@+id/bola3" />
+        app:layout_constraintTop_toTopOf="@+id/bola3"
+        android:autofillHints="00"
+        android:hint="@string/space" />
 
     <EditText
         android:id="@+id/input4"
@@ -154,7 +234,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola4"
         app:layout_constraintEnd_toEndOf="@+id/bola4"
         app:layout_constraintStart_toStartOf="@+id/bola4"
-        app:layout_constraintTop_toTopOf="@+id/bola4" />
+        app:layout_constraintTop_toTopOf="@+id/bola4"
+        android:autofillHints="00"
+        android:hint="@string/space" />
 
     <EditText
         android:id="@+id/input5"
@@ -165,16 +247,108 @@
         app:layout_constraintBottom_toBottomOf="@+id/bola5"
         app:layout_constraintEnd_toEndOf="@+id/bola5"
         app:layout_constraintStart_toStartOf="@+id/bola5"
-        app:layout_constraintTop_toTopOf="@+id/bola5" />
+        app:layout_constraintTop_toTopOf="@+id/bola5"
+        android:autofillHints="00"
+        android:hint="@string/space" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Sorteio"
-        android:textSize="25dp"
+        android:text="@string/sorteio"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/resultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/acerto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/extracao1"
+        app:layout_constraintEnd_toEndOf="@+id/extracao1"
+        app:layout_constraintStart_toStartOf="@+id/extracao1"
+        app:layout_constraintTop_toTopOf="@+id/extracao1" />
+
+    <TextView
+        android:id="@+id/acerto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/extracao2"
+        app:layout_constraintEnd_toEndOf="@+id/extracao2"
+        app:layout_constraintStart_toStartOf="@+id/extracao2"
+        app:layout_constraintTop_toTopOf="@+id/extracao2" />
+
+    <TextView
+        android:id="@+id/acerto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/extracao3"
+        app:layout_constraintEnd_toEndOf="@+id/extracao3"
+        app:layout_constraintStart_toStartOf="@+id/extracao3"
+        app:layout_constraintTop_toTopOf="@+id/extracao3" />
+
+    <TextView
+        android:id="@+id/acerto4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/extracao4"
+        app:layout_constraintEnd_toEndOf="@+id/extracao4"
+        app:layout_constraintStart_toStartOf="@+id/extracao4"
+        app:layout_constraintTop_toTopOf="@+id/extracao4" />
+
+    <TextView
+        android:id="@+id/acerto5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/extracao5"
+        app:layout_constraintEnd_toEndOf="@+id/extracao5"
+        app:layout_constraintStart_toStartOf="@+id/extracao5"
+        app:layout_constraintTop_toTopOf="@+id/extracao5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/extra_o"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        app:layout_constraintBottom_toTopOf="@+id/resultados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
